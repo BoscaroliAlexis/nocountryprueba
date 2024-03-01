@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <script src="https://kit.fontawesome.com/12a518914b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.svg" alt="Logo" id="logo">
+        <div id="search-container">
+            <div id="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <input type="text" id="search-bar" placeholder="Encuentra recetas aquí">
+        </div>
+        <button id="recipes-btn">Recetas</button>
+        <button id="menu-btn">Menú</button>
+    </header>
+
+    <div class="content-section">
+        <div class="text-section">
+            <h2><p id="texto1">Descubre, comparte y conecta:</p> cocina y encuentra a personas con intereses en común</h2>
+            <button class="upload-btn"><i class="fas fa-pencil-alt"></i>Sube tu receta</button>
+        </div>
+        <div class="image-section">
+            <img src="images/sarten.png" alt="Ejemplo de imagen">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><i class="fas fa-fire"></i>    Recetas Populares</div>
+        <div class="owl-carousel">
+            <div class="card">
+                <img src="images/locro.jpg" alt="Receta 1">
+                <div class="card-text">Locro (Chaco, Argentina)</div>
+            </div>
+            <div class="card">
+                <img src="images/locro.jpg" alt="Receta 2">
+                <div class="card-text">Locro (Chaco, Argentina)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><i class="fas fa-heart"></i>Recetas Guardadas</div>
+        <div class="owl-carousel">
+            <div class="card">
+                <img src="images/locro.jpg" alt="Receta 1">
+                <div class="card-text">Locro (Chaco, Argentina)</div>
+            </div>
+            <div class="card">
+                <img src="images/locro.jpg" alt="Receta 2">
+                <div class="card-text">Locro (Chaco, Argentina)</div>
+            </div>        
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><i class="fas fa-circle"></i>Recetas Nuevas</div>
+        <div class="owl-carousel">
+            <div class="card">
+                <img src="images/locro.jpg" alt="Receta 1">
+                <div class="card-text">Locro (Chaco, Argentina)</div>
+            </div>
+            <div class="card">
+                <img src="images/locro.jpg" alt="Receta 2">
+                <div class="card-text">Locro (Chaco, Argentina)</div>
+            </div>        
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title"><i class="fas fa-globe-americas"></i>Recetas por Región</div>
+        <div class="owl-carousel">
+            <div class="card">
+                <img src="images/locro.jpg" alt="Receta 1">
+                <div class="card-text">Locro (Chaco, Argentina)</div>
+            </div>
+            <div class="card">
+                <img src="images/locro.jpg" alt="Receta 2">
+                <div class="card-text">Locro (Chaco, Argentina)</div>
+            </div>        
+        </div>
+    </div>
+
+</body>
+</html>
